@@ -17,6 +17,8 @@ a, a:hover, a:visited {
     font-size: 18px;
 }
 
+
+
 #map {
     top:0;
     height: 100vh;
@@ -80,11 +82,11 @@ a, a:hover, a:visited {
 .step div {
     padding:  25px 50px;
     line-height: 25px;
-    font-size: 13px;
+    font-size: 16px;
 }
 
 .step img {
-    width: 100%;
+    width: 50%;
 }
 
 @media (max-width: 750px) {

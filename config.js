@@ -30,6 +30,26 @@ var config = {
                     {
                         layer: 'per capita',
                         opacity: 0
+                    },
+                    {
+                        layer: 'Yuhang',
+                        opacity: 0
+                    },
+                    {
+                        layer: 'hubei',
+                        opacity: 0
+                    },
+                    {
+                        layer: 'jingxinxiangzhu',
+                        opacity: 0
+                    },
+                    {
+                        layer: 'Hangzhou',
+                        opacity: 0
+                    },
+                    {
+                        layer: 'shenzhen',
+                        opacity: 0
                     }
                 ]
             },
@@ -44,12 +64,7 @@ var config = {
                     pitch: 20,
                     bearing: 10
                 },
-                onChapterEnter: [
-                    {
-                        layer: 'wuhan lockdown',
-                        opacity: 1
-                    }
-                ],
+                onChapterEnter: [],
                 onChapterExit: []
             },
             {
@@ -81,7 +96,7 @@ var config = {
                 onChapterExit: []
             },
             {
-                id: 'Yuhang',
+                id: 'Yuhang2',
                 title: 'Feb.7',
                 //image: './path/to/image/source.png',
                 description: '"Yuhang Green Code" goes online.',
@@ -94,16 +109,34 @@ var config = {
                 onChapterEnter: [
                     {
                         layer: 'Yuhang',
-                        opacity: 1
+                        opacity: 0.1,
                     }
                 ],
 
             },
             {
+                id: 'Shenzhen',
+                title: 'Feb.9',
+                //image: './path/to/image/source.png',
+                description: '"iShenzhen", a Wechat mini-program, goes online. Based in Shenzhen, the tech giant Tencent owns Wechat as one of its six business groups.',
+                location: {
+                    center: [114.04845, 22.58187],
+                    zoom: 8,
+                    pitch: 50,
+                    bearing: 10
+                },
+                onChapterEnter: [
+                    {
+                        layer: 'shenzhen',
+                        opacity: 0.1,
+                    }
+                ],
+            },
+            {
                 id: 'Hangzhou',
                 title: 'Feb.11',
                 //image: './path/to/image/source.png',
-                description: '"Hangzhou City Code" goes online.',
+                description: '"Hangzhou City Code" goes online. Hangzhou is the home to another Chinese tech giant: the e-commerce company, Alibaba.',
                 location: {
                     center: [120.44414, 30.42042],
                     zoom: 8,
@@ -113,7 +146,7 @@ var config = {
                 onChapterEnter: [
                     {
                         layer: 'Hangzhou',
-                        opacity: 1
+                        opacity: 0.1,
                     }
                 ],
                 onChapterExit: []
@@ -122,7 +155,7 @@ var config = {
                 id: 'story_card_Ruixian',
                 title: 'Ruixian',
                 //image: './path/to/image/source.png',
-                description: 'Ruixian, a resident of Hangzhou, home to China\'s largest e-commerce company, Alibaba, was the first group of audience in China started using the QR health code. The QR code is checked at the entrances of neighborhoods, markets, malls, airports, and transit stations. Working at an Internet company, Ruixian noticed the QR code\'s development as each version was released. “The most impressive one had a ‘real-time function’,” she said. Before that, many people would show their screenshots of the code (to avoid actually opening the app).',
+                description: 'Ruixian, a resident of Hangzhou, was the first group of audience in China started using the QR health code. The QR code is checked at the entrances of neighborhoods, markets, malls, airports, and transit stations. Working at an Internet company, Ruixian noticed the QR code\'s development as each version was released. “The most impressive one had a ‘real-time function’,” she said. Before that, many people would show their screenshots of the code (to avoid actually opening the app).',
                 location: {
                     center: [120.161419, 30.29365],
                     zoom: 8,
@@ -146,13 +179,13 @@ var config = {
                 onChapterEnter: [
                     {
                         layer: 'jingxinxiangzhu',
-                        opacity: 1
+                        opacity: 0.1
                     }
                 ],
                 onChapterExit: []
             },
             {
-                id: 'timeline',
+                id: 'Hubei',
                 title: 'Feb 24',
                 //image: './path/to/image/source.png',
                 description: 'Hubei province\'s QR Health code goes online.',
@@ -165,7 +198,7 @@ var config = {
                 onChapterEnter: [
                     {
                         layer: 'hubei',
-                        opacity: 1
+                        opacity: 0.1
                     }
                 ],
                 onChapterExit: []
@@ -191,7 +224,7 @@ var config = {
                 onChapterExit: [
                     {
                         layer: 'search',
-                        opacity: 0
+                        opacity: 1
                     }
                 ]
             },
@@ -199,15 +232,36 @@ var config = {
                 id: 'timeline',
                 title: 'March 18',
                 //image: './path/to/image/source.png',
-                description: 'The Chinese government emphasizes the importance of promoting a "national, unified criterion for health code."',
+                description: 'The Chinese government emphasizes the importance of promoting a "mutual recognition system between two regions"',
                 location: {
-                    center: [113.16916, 30.68632],
-                    zoom: 5,
-                    pitch: 50,
+                    center: [114.266667, 30.583333],
+                    zoom: 3,
+                    pitch: 20,
                     bearing: 10
                 },
                 onChapterEnter: [],
-                onChapterExit: []
+                onChapterExit: [
+                    {
+                        layer: 'Yuhang',
+                        opacity: 0
+                    },
+                    {
+                        layer: 'hubei',
+                        opacity: 0
+                    },
+                    {
+                        layer: 'jingxinxiangzhu',
+                        opacity: 0
+                    },
+                    {
+                        layer: 'Hangzhou',
+                        opacity: 0
+                    },
+                    {
+                        layer: 'shenzhen',
+                        opacity: 0
+                    }
+                ]
             },
             { id: 'story_card_Ruixian',
                 title: 'Ruixian',
@@ -227,7 +281,7 @@ var config = {
                 id: 'China',
                 title: 'March 20',
                 //image: './path/to/image/source.png',
-                description: 'The Chinese government raises three possible solutions for developing the so-called "national, unified criterion for health code": data sharing among regional governments; data transferring from regional governments to a national platform; if areas haven’t developed a regional health code, they could use the national platform, or share data with other regional governments',
+                description: 'The Chinese government raises three possible solutions for developing the so-called "mutual recognition system between two regions": data sharing between regional governments; data transferring from regional governments to a national platform; if areas haven’t developed a regional health code, they could use the national platform, or share data with other regional governments',
                 location: {
                     center: [120.161419, 30.29365],
                     zoom: 4,
@@ -251,21 +305,8 @@ var config = {
                 onChapterEnter: [],
                 onChapterExit: []
             },
-            {
-                id: 'story_card_Sophie',
-                title: 'Sophie',
-                //image: './path/to/image/source.png',
-                description: '“At first, it was said that if you haven’t continued checking-in for three days, the green code would turn yellow. It will also turn yellow if your based area becomes mid-to-high risk. But I have never come across these,” she said. Sophie\'s area was considered low-risk compared with other areas in Hubei Province, so the code turned green after March 22. However, even if you are in a low-risk area, there are still people that have to apply for “code transformation” to turn their red code to yellow then to green. The Chinese government categorizes these people as "confirmed cases", "possible cases", "fever cases", or "cases without symptoms."',
-                location: {
-                    center: [120.161419, 30.29365],
-                    zoom: 5,
-                    pitch: 50,
-                    bearing: 10
-                },
-                onChapterEnter: [],
-                onChapterExit: []
-            }, {
-                id: 'timeline',
+           {
+                id: 'Hubei',
                 title: 'March 25',
                 //image: './path/to/image/source.png',
                 description: 'Highway system returns to work in Hubei Province (except for Wuhan)',
@@ -280,7 +321,7 @@ var config = {
                 onChapterExit: []
             },
             {
-                id: 'Mike',
+                id: 'Mike_Xiaogan',
                 title: 'Mike',
                 //image: './path/to/image/source.png',
                 description: 'Mike (anonymous), who traveled with his wife and daughter from Xiaogan, which is a village in Hubei province, experienced a difficult journey to Beijing. Mike and his wife filled out their applications on Jingxinxaingzhu right after Hubei re-opened initially. Unlike Ruixian, he applied via Alipay.',
@@ -311,7 +352,7 @@ var config = {
                 onChapterExit: []
             },
             {
-                id: 'story_card',
+                id: 'Sophie_Beijing',
                 title: 'Sophie',
                 //image: './path/to/image/source.png',
                 description: 'As a college student studying in Beijing, Sophie also applied for “Jingxinxiangzhu” WeChat mini-program. Students are currently not allowed return to Beijing now. But they still have to report their health status and current location in the WeChat mini-program everyday. “If you go back to Beijing without permission, you will get punished.” Sophie introduced.',
@@ -325,13 +366,13 @@ var config = {
                 onChapterExit: []
             },
             {
-                id: 'story_card',
+                id: 'Mengyuan_Beijing',
                 title: 'Mengyuan',
                 image: 'images/GPS.JPG',
                 description: 'Different places have different requirements. The code works in some places but not others, Sophie explained. Beijing resident Mengyuan Dong is also facing this situation. She was asked by security guards for her Beijing code when she entered her office. But more often than not, she relied upon a “telecommunication big data pass” provided by phone carriers that tracks users\' GPS data. It allowed her to get access to more public places.',
                 location: {
-                    center: [120.161419, 30.29365],
-                    zoom: 5,
+                    center: [116.38895, 39.96158],
+                    zoom: 10,
                     pitch: 50,
                     bearing: 10
                 },
@@ -339,7 +380,7 @@ var config = {
                 onChapterExit: []
             },
             {
-                id: 'story_card',
+                id: 'Mike_Xiaogan2',
                 title: 'Mike',
                 //image: './path/to/image/source.png',
                 description: 'After waiting a few days, Mike\'s and his wife’s applications were approved; they could finally book the train ticket.  Mike said the system will not allow you to make changes to your application once it is approved.',
@@ -354,7 +395,7 @@ var config = {
                 onChapterEnter: [],
                 onChapterExit: []
             }, {
-                id: 'timeline',
+                id: 'Wuhan',
                 title: 'April 8',
                 //image: './path/to/image/source.png',
                 description: 'Wuhan the epicenter reopens after on lockdown for 76 days. Life in China is back to normal.',
@@ -369,37 +410,37 @@ var config = {
             },
 
             {
-                id: 'story_card',
+                id: 'Shiwen_Shanghai',
                 title: 'Shiwen',
                 image: 'images/Shanghai.JPG',
                 description: 'Shiwen, an international student traveling from New York to Shanghai in early April, was blocked when she registered for a hotel after the “fourteen days mandatory quarantine" even she got two official health reports (“Out of quarantine report” and “COVID-19 tested negative report”). "They still didn’t allow me to check-in simply because my health code was getting latency on transferring from red to green,” she said.',
                 description2: 'But in Shanghai airport, the staff gave her permission to onboard after seeing her two reports.',
                 location: {
-                    center: [120.161419, 30.29365],
-                    zoom: 5,
+                    center: [121.45675, 31.21288],
+                    zoom: 8,
                     pitch: 50,
                     bearing: 10
                 },
                 onChapterEnter: [],
                 onChapterExit: []
             }, {
-                id: 'timeline',
+                id: 'Guangzhou',
                 title: 'April 10',
                 //image: './path/to/image/source.png',
                 description: 'Guangzhou city reported a confirmed case without symptoms. The person, who held a  “green code” designation, traveled from Hubei on April 4.',
                 location: {
-                    center: [120.161419, 30.29365],
-                    zoom: 5,
+                    center: [113.26729, 23.17479],
+                    zoom: 8,
                     pitch: 50,
                     bearing: 10
                 },
                 onChapterEnter: [],
                 onChapterExit: []
             }, {
-                id: 'timeline',
+                id: 'Beijing',
                 title: 'April 18',
                 //image: './path/to/image/source.png',
-                description: 'Beijing, Tianjing, and Hebei Triangle area achieved sharing data.',
+                description: 'Beijing-Tianjing-Hebei Metropolitan Region achieved sharing data. Residents are able to travel within this region without applying for different health codes or quarantining for 14 days, but they have to report their personal data to a national platform called "National Government Political Service Platform" (国家政务服务平台).',
                 location: {
                     center: [120.161419, 30.29365],
                     zoom: 5,
@@ -410,7 +451,7 @@ var config = {
                 onChapterExit: []
             },
             {
-                id: 'timeline',
+                id: 'Hubei',
                 title: 'April 25',
                 //image: './path/to/image/source.png',
                 description: 'Foreigners and people from Hongkong, Macau, and Taiwan could apply for Hubei’s health code.',
@@ -422,7 +463,21 @@ var config = {
                 },
                 onChapterEnter: [],
                 onChapterExit: []
-            }
+            },
+            {
+                id: 'timeline',
+                title: 'April 27',
+                //image: './path/to/image/source.png',
+                 description: 'Xinhua News Agency promotes the way of transferring data from regional governments to the "National Government Political Service Platform" in achieving "the mutual recognition system between two regions". The Chinese state-run media outlet also demonstrated successful examples of doing so. The list it gave includes 11 regions- Shanghai, Beijing, Hubei province, Guangdong province, Zhejiang province, Jiangsu province, Tianjin, Inner Mongolia, Liaoning province, Henan province, and Sichuan province.  ',
+                location: {
+                center: [120.161419, 30.29365],
+                 zoom: 5,
+                    pitch: 50,
+                    bearing: 10
+},
+    onChapterEnter: [],
+        onChapterExit: []
+        }
 
 
         ]
