@@ -14,7 +14,7 @@ a, a:hover, a:visited {
 #header {
     padding: 10vh;
     width:60%;
-    opacity:80%;
+    opacity:70%;
     height:100%;
     text-align: center;
     display: inline-block;
@@ -80,7 +80,7 @@ a, a:hover, a:visited {
     }
 
     #header {
-        opacity:80%;
+        opacity:70%;
         height:100%;
         text-align: center;
         display: inline-block;
