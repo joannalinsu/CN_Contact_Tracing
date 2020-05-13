@@ -68,6 +68,12 @@ if (config.subtitle) {
     header.appendChild(subtitleText);
 }
 
+if (config.blurb) {
+    var blurb= document.createElement('h3');
+    blurb.innerText = config.blurb;
+    header.appendChild(blurb);
+}
+
 if (config.byline) {
     var bylineText = document.createElement('p');
     bylineText.innerText = config.byline;
@@ -120,7 +126,7 @@ config.chapters.forEach((record, idx) => {
 
     }
 
-    if (record.description4) {
+    if (record.description4){
         var story = document.createElement('p');
         story.innerHTML = record.description4;
         chapter.appendChild(story);
@@ -190,7 +196,7 @@ map.on("load", function() {
     scroller
     .setup({
         step: '.step',
-        offset: 0.9,
+        offset: 0.6,
         progress: true
     })
     .onStepEnter(response => {
