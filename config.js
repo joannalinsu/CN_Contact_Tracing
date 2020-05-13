@@ -13,7 +13,7 @@ var config = {
                 id: 'introduction',
                 //title: 'Jan.23',
                 description: 'While the US is still developing its contact tracing system for COVID-19, which sees two tech giants Google and Apple working together, China’s  contact tracing system, termed the "health code system," has been up and running for three months now.',
-                image: 'images/codes.JPG',
+                image: 'images/codes.jpg',
                 description2: "The so-called \"health code system\" is based on the already existing \"QR code system\". Users have to login in the systems on their mobile apps, majorly are WeChat and Alipay. The health code system has three colors in representing its users' \"health status\" (see the picture above): green means you are healthy and allowed to travel; yellow means you are suspected of getting COVID-19; red means you are confirmed with COVID-19. People who have yellow or red codes will get blocked during travels.",
                 description3:"Though the effectiveness of the system is not clear yet, and the algorithms about how users are designated for certain color codes looks like a black-box, it still appears in almost everywhere in the country. In three months, we see how confused the users were, how tech giants competed on this big data project, and how the government's surveillance goal eventually achieved. When you want to travel, you have to apply for one, or even more than one.",
                 description4:"By crawling the web, conducting interviews on social media, collecting data from online sources, this article wants to shed some lights on how this contact tracing system came into massive surveillance and what the blind spots are.",
@@ -149,7 +149,6 @@ var config = {
             {
                 id: 'wuhan lockdown',
                 title: 'Jan. 23 - the global pandemic started.',
-                //image: './path/to/image/source.png',
                 description: 'Wuhan began lockdown, 49 days before the nation wide lockdown in Italy and 58 days before the “stay-at-home’ order took place in New York City. No transportation system in Wuhan after the lockdown.',
                 location: {
                     center: [114.266667, 30.583333],
@@ -163,7 +162,7 @@ var config = {
             {
                 id: 'Yuhang',
                 title: 'Feb.3 - the first creation goes online.',
-                image: "images/1.jpg",
+                image: "images/1.JPG",
                 description: 'Yuhang, a borough in Hangzhou which houses Alibaba, started developing a new health code system in the mobile payment app Alipay. The system is called “Yuhang Green Code." Four days later, the very first experimental health code goes online. It soon becomes a model for other regions to replicate.',
                 location: {
                     center: [120.222, 30.42042],
@@ -230,7 +229,6 @@ var config = {
             {
                 id: 'Hubei',
                 title: 'Feb. 24 - the epicenter also adapted to this system.',
-                //image: './path/to/image/source.png',
                 description: 'Hubei province\'s QR Health code goes online. People in Hubei could apply for their personal health codes both in WeChat and Alipay.',
                 location: {
                     center: [114.266667, 30.583333],
@@ -274,7 +272,6 @@ var config = {
             {
                 id: 'story_card_Ruixian',
                 title: 'Ruixian: the QR code is checked at the entrances.',
-                //image: './path/to/image/source.png',
                 description: 'Ruixian, a resident of Hangzhou, was the first group of audience in China started using the QR health code. According to her, the QR code is checked at the entrances of neighborhoods, markets, malls, airports, and transit stations. Working at an Internet company, Ruixian noticed the QR code\'s development as each version was released. “The most impressive one had a ‘real-time function’,” she said. Before that, many people would show their screenshots of the code (to avoid actually opening the app).',
                 location: {
                     center: [120.44414, 30.42042],
@@ -288,7 +285,6 @@ var config = {
             {
                 id: 'story_card_Ruixian',
                 title: 'Ruixian: I was shocked by how quickly the call was.',
-                //image: './path/to/image/source.png',
                 description: 'On March 19, Ruixian flew back to her office in Beijing. This time, she had to apply for another contract tracing application. At the airport in Hangzhou, she filled out the application on Jingxinxiangzhu WeChat Mini-program. “The moment I finished onboarding, a government worker from Beijing called me on the phone to tell me to self-quarantine in my Beijing’s apartment for fourteen days,” she was shocked by how quickly the call was made.',
                 location: {
                     center: [120.44414, 30.42042],
@@ -339,7 +335,6 @@ var config = {
             {
                 id: 'timeline',
                 title: 'March 22',
-                //image: './path/to/image/source.png',
                 description: 'Hubei Province cancels its “everyday check-in policy” in the app. According to data from the Chinese government, Hubei reported zero new case that day. At the same time, New York State, the epicenter of the US, reported 4817 new cases that date, according to the tracker from the New York Times.',
                 location: {
                     center: [120.161419, 30.29365],
@@ -353,7 +348,6 @@ var config = {
            {
                 id: 'Hubei',
                 title: 'March 25',
-                //image: './path/to/image/source.png',
                 description: 'Highway system returns to work in Hubei Province (except for Wuhan).',
                 location: {
                     center: [120.161419, 30.29365],
