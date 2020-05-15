@@ -92,9 +92,16 @@ config.chapters.forEach((record, idx) => {
     var chapter = document.createElement('div');
 
     if (record.title) {
-        var title = document.createElement('h3');
-        title.innerText = record.title;
-        chapter.appendChild(title);
+        if(record.num == 1)
+        {
+            var t = document.createElement('h4');
+        }
+        else
+        {
+            var t = document.createElement('h5');
+        }
+        t.innerText = record.title;
+        chapter.appendChild(t);
     }
 
 
@@ -132,6 +139,13 @@ config.chapters.forEach((record, idx) => {
         chapter.appendChild(story);
 
     }
+
+    if (record.description5){
+        var story = document.createElement('p');
+        story.innerHTML = record.description5;
+        chapter.appendChild(story);
+    }
+
     container.setAttribute('id', record.id);
     container.classList.add('step');
     if (idx === 0) {
@@ -165,9 +179,9 @@ const transformRequest = (url) => {
     const hasQuery = url.indexOf("?") !== -1;
     const suffix = hasQuery ? "&pluginName=journalismScrollytelling" : "?pluginName=journalismScrollytelling";
     return {
-      url: url + suffix
+        url: url + suffix
     }
-}
+};
 
 var map = new mapboxgl.Map({
     container: 'map',
