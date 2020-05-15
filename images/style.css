@@ -2,7 +2,7 @@
 body {
     margin:0;
     padding:0;
-    font-family: News Cycle;
+    font-family: -apple-system, BlinkMacSystemFont, “Segoe UI”, Roboto, Helvetica, Arial, sans-serif, “Apple Color Emoji”, “Segoe UI Emoji”, “Segoe UI Symbol”;
     background-color:#222;
     font-size:20px;
 }
@@ -31,6 +31,14 @@ a, a:hover, a:visited {
     z-index:0;
 }
 
+h1{
+    font-family: "Times New Roman";
+}
+
+h2{
+    font-family: "Times New Roman";
+}
+
 h4{
     font-size:24px;
     background-color:#2F4F4F;
@@ -43,9 +51,9 @@ h5{
 
 #features {
     width:30%;
-    padding-top: 10vh;
-    padding-bottom: 10vh;
+    overflow-x:hidden
 }
+
 .centered {
     width: 50vw;
     margin: 0 auto;
@@ -83,7 +91,7 @@ h5{
     body {
         margin:0;
         padding:0;
-        font-family: News Cycle;
+        font-family:  -apple-system, BlinkMacSystemFont, “Segoe UI”, Roboto, Helvetica, Arial, sans-serif, “Apple Color Emoji”, “Segoe UI Emoji”, “Segoe UI Symbol”;
         font-size:14px;
         width: 100vw;
     }
@@ -107,14 +115,19 @@ h5{
         z-index:999;
     }
 
-     h1{
-        font-size:26px;
+    h1{
+        font-size:28px;
+        font-family: "Times New Roman";
     }
 
     h2{
-        font-size:24px;
+        font-size:20px;
+        font-family: "Times New Roman";
     }
 
+    h3{
+        font-size:18px;
+    }
 
     .step div {
         padding:  25px 50px;

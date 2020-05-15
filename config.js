@@ -6,7 +6,7 @@ var config = {
         alignment: 'right',
         title: 'COVID-19 & ONLINE SURVEILLANCE',
         subtitle: 'How China\'s contact tracing app is affecting travelers',
-        blurb:'need something here. need something here. need something here. need something here. need something here.need something here. need something here. need something here. need something here.need something here. need something here. need something here. need something here. need something here. need something here. need something here. need something here. need something here. need something here.   ',
+        blurb:'The story shows how China\'s massive surveillance with the QR health code system came into effect. It offers a chronologically ordered and geographically marked view to help readers understand the development of this system.',
         byline: 'by Joanna Lin Su',
         chapters: [
             {
@@ -411,7 +411,7 @@ var config = {
                 id: 'Weibo',
                 title: '📱💻 Weibo users: different places have different requirements, even inside the same city.',
                 image: 'images/weibo.jpg',
-                description: 'Users on Weibo, China’s version of Twitter , also complained about the system\'s inconsistency. User with the Weibo ID "机智小天使F" from Jiangsu province complained about being prevented entrance into a shopping mall l because she was using the city-level contact tracing app rather than the province-level app. Similarly in Jiangxi province, user "十二支白鹭鸶飞过秋天的湖泊" witnessed an elderly man getting kicked off a bus simply because his QR code, which he had painstakingly learned how to use, was on Wechat, not on Alipay which was required to ride the bus.',
+                description: 'Users on Weibo, China’s version of Twitter , also complained about the system\'s inconsistency. User from Jiangsu province complained about being prevented entrance into a shopping mall because she was using the city-level contact tracing app rather than the province-level app. Similarly in Jiangxi province, another user witnessed an elderly man getting kicked off a bus simply because his QR code, which he had painstakingly learned how to use, was on Wechat, not on Alipay which was required to ride the bus.',
                 location: {
                     center: [115.97731, 27.43099],
                     zoom: 6,
@@ -502,10 +502,10 @@ var config = {
             {
                 id: 'Methods and Sources',
                 //image: './path/to/image/source.png',
-                description: 'Sources and Methods:',
-                description2: 'Data: Baidu Search Index (http://index.baidu.com/), and 2010 Chinese census data. Photos credit to Weibo user "单行道111".',
-                description3: 'Methods: the search index data is collected on May 1. Data ranges from Feb.1 to April 30. Searching per million is calculated based on the national census data which is collected once a decade. NEED MORE HERE. ',
-                description4:'Special thanks......',
+                description: 'Sources, methods, and special thanks:',
+                description2: 'Sources: Baidu Search Index (http://index.baidu.com/), 2010 Chinese census data, and NYT\'s Coronavirus tracker (https://www.nytimes.com/interactive/2020/world/coronavirus-maps.html). Weibo sources from "机智小天使F"，and "十二支白鹭鸶飞过秋天的湖泊". Photos credit to Weibo user "单行道111".',
+                description3: 'Methods: the search index data is collected on May 1. Data ranges from Feb.1 to April 30. The index provides daily average search counts for 348 areas in the mainland China. Searching per million rate is calculated based on the national census data which is collected once a decade. ',
+                description4:'Special thanks to Mayuri Mei Lin and Andrew Lampard for editing, and Blake Hunsicker for web development advice. ',
                 location: {
                     center: [120.161419, 30.29365],
                     zoom: 5,
